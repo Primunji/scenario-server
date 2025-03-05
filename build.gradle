@@ -27,6 +27,8 @@ dependencies {
 
     implementation 'com.aallam.openai:openai-client'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation 'org.springframework.security:spring-security-test'
     runtimeOnly 'io.ktor:ktor-client-okhttp'
 
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
@@ -40,6 +42,14 @@ dependencies {
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test'
     runtimeOnly 'com.mysql:mysql-connector-j'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // JJWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.6'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.6'
+
+    // SpringDoc
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
 }
 
 kotlin {
