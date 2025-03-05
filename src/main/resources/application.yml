@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: fishingstop-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+server:
+  port: 443
+  ssl:
+    enabled: false
+    key-store: ${SSL_KEYSTORE_PATH}
+    key-store-password: ${SSL_KEYSTORE_PASSWORD}
+    key-store-type: PKCS12
+    key-alias: ${SSL_KEY_ALIAS}
+
+typecast:
+  api-key: ${TYPECAST_API_KEY}
+
+openai:
+  api-key: ${OPEN_AI_KEY}
