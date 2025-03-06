@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="fix: api-key">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="refactor: CI/CD">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +24,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fishingstop-server" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -56,32 +63,77 @@
 }</component>
   <component name="ProjectId" id="2ts8dvt1jTiabkggQgXbv9SgAer" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build fishingstop-server.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.FishingstopServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build fishingstop-server.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.FishingstopServerApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kichan/Projects/fishingstop-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/Users/kichan/.gradle"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/dto/request" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="dev.euns.fishingstopserver.domain.user.service" />
+      <recent name="dev.euns.fishingstopserver.domain.auth.dto.response" />
+      <recent name="dev.euns.fishingstopserver.domain.user.exception" />
+      <recent name="dev.euns.fishingstopserver.domain.user.repository" />
+      <recent name="dev.euns.fishingstopserver.domain.auth.service" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="fishingstop-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="fishingstop-server" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FishingstopServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="fishingstop-server.main" />
+      <module name="scenario-server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.euns.fishingstopserver.FishingstopServerApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="true" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          <ENTRY IS_ENABLED="true" PARSER="env" IS_EXECUTABLE="false" PATH=".env" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,8 +142,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -105,6 +157,7 @@
       <updated>1741129512966</updated>
       <workItem from="1741129514258" duration="62000" />
       <workItem from="1741129590485" duration="4649000" />
+      <workItem from="1741171083663" duration="20211000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: build file">
       <option name="closed" value="true" />
@@ -122,7 +175,87 @@
       <option name="project" value="LOCAL" />
       <updated>1741164627161</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: 의존성 추가">
+      <option name="closed" value="true" />
+      <created>1741172018575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741172018575</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: swagger document">
+      <option name="closed" value="true" />
+      <created>1741172127588</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741172127588</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor: project name">
+      <option name="closed" value="true" />
+      <created>1741215212264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741215212264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor: project name">
+      <option name="closed" value="true" />
+      <created>1741217297345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741217297345</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: auth 기능">
+      <option name="closed" value="true" />
+      <created>1741219927722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741219927722</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: swagger setting">
+      <option name="closed" value="true" />
+      <created>1741220510820</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741220510820</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: build issues">
+      <option name="closed" value="true" />
+      <created>1741228746455</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741228746455</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: ssl issues">
+      <option name="closed" value="true" />
+      <created>1741235808600</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741235808600</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor: gitignore">
+      <option name="closed" value="true" />
+      <created>1741241852482</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741241852482</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor: CI/CD">
+      <option name="closed" value="true" />
+      <created>1741250306509</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741250306509</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +265,15 @@
     <MESSAGE value="Feat: O" />
     <MESSAGE value="Feat: build file" />
     <MESSAGE value="fix: api-key" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: api-key" />
+    <MESSAGE value="refactor: 의존성 추가" />
+    <MESSAGE value="feat: swagger document" />
+    <MESSAGE value="refactor: project name" />
+    <MESSAGE value="feat: auth 기능" />
+    <MESSAGE value="fix: swagger setting" />
+    <MESSAGE value="fix: build issues" />
+    <MESSAGE value="fix: ssl issues" />
+    <MESSAGE value="refactor: gitignore" />
+    <MESSAGE value="refactor: CI/CD" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: CI/CD" />
   </component>
 </project>
