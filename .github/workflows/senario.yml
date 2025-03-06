@@ -50,17 +50,14 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            echo "${{ secrets.P12_BASE64 }}" | base64 --decode | sudo tee /opt/certs/keystore.p12 > /dev/null
-            sudo chmod 600 /opt/certs/keystore.p12
-          
             sudo docker stop senario-container || true
             sudo docker rm senario-container || true
-
+          
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/senario:latest
             sudo docker run -d --name senario-container \
               --env-file .env \
               -p 443:443 \
-              -e SSL_KEYSTORE_PATH=/opt/certs/keystore.p12 \
+              -e SSL_KEYSTORE_PATH=keystore.p12 \
               -e SSL_KEYSTORE_PASSWORD=${{ secrets.SSL_KEYSTORE_PASSWORD }} \
               -e SSL_KEY_ALIAS=${{ secrets.SSL_KEY_ALIAS }} \
               -e TZ=Asia/Seoul \
