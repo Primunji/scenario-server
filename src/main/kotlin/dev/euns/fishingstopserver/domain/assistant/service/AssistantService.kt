@@ -26,7 +26,7 @@ class AssistantService(
             request = AssistantRequest(
                 name = "Human Rights Bot",
                 instructions = "한국어로 상냥하게 말해봐",
-                model = ModelId("gpt-4o"),
+                model = ModelId("o3-mini"),
             )
         )
 
