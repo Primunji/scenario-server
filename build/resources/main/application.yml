@@ -1,11 +1,11 @@
 spring:
   application:
-    name: fishingstop-server
+    name: scenario-server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: "root"
-    url: "jdbc:mysql://localhost:3306?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul"
-    password: ""
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -22,7 +22,7 @@ server:
     key-alias: ${SSL_KEY_ALIAS}
 
 typecast:
-  api-key: ""
+  api-key: ${TYPECAST_API_KEY}
 
 openai:
-  api-key: ""
+  api-key: ${OPEN_AI_KEY}
