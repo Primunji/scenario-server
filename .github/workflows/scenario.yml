@@ -32,7 +32,7 @@ jobs:
         run: echo "$P12_BASE64" | base64 -d > keystore.p12
         env:
           P12_BASE64: ${{ secrets.P12_BASE64 }}
-          
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
