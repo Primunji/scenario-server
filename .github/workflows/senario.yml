@@ -34,13 +34,18 @@ jobs:
           echo "${{ secrets.ENV }}" > .env
         shell: bash
 
+      - name: Restore .p12 file
+        run: echo "$P12_BASE64" | base64 -d > keystore.p12
+        env:
+            P12_BASE64: ${{ secrets.P12_BASE64 }}
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/senario:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/scenario:latest
           platforms: linux/amd64
 
       - name: Deploy to EC2
@@ -50,10 +55,10 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            sudo docker stop senario-container || true
-            sudo docker rm senario-container || true
+            sudo docker stop scenario-container || true
+            sudo docker rm scenario-container || true
           
-            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/senario:latest
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/scenario:latest
             sudo docker run -d --name senario-container \
               --env-file .env \
               -p 443:443 \
@@ -61,4 +66,4 @@ jobs:
               -e SSL_KEYSTORE_PASSWORD=${{ secrets.SSL_KEYSTORE_PASSWORD }} \
               -e SSL_KEY_ALIAS=${{ secrets.SSL_KEY_ALIAS }} \
               -e TZ=Asia/Seoul \
-              ${{ secrets.DOCKER_USERNAME }}/senario:latest
+              ${{ secrets.DOCKER_USERNAME }}/scenario:latest

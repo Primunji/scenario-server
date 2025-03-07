@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="refactor: CI/CD">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +155,7 @@
       <updated>1741129512966</updated>
       <workItem from="1741129514258" duration="62000" />
       <workItem from="1741129590485" duration="4649000" />
-      <workItem from="1741171083663" duration="20211000" />
+      <workItem from="1741171083663" duration="28395000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: build file">
       <option name="closed" value="true" />
@@ -255,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741250306509</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactor: CI/CD">
+      <option name="closed" value="true" />
+      <created>1741250777283</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741250777283</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
