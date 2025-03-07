@@ -31,3 +31,4 @@ out/
 /.nb-gradle/
 .vscode/
 *.DS_Store
+.idea/

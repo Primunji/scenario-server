@@ -1,4 +1,4 @@
-name: senario CI
+name: Scenario CI
 
 on:
   push:
@@ -59,7 +59,7 @@ jobs:
             sudo docker rm scenario-container || true
           
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/scenario:latest
-            sudo docker run -d --name senario-container \
+            sudo docker run -d --name scenario-container \
               --env-file .env \
               -p 443:443 \
               -e SSL_KEYSTORE_PATH=keystore.p12 \
