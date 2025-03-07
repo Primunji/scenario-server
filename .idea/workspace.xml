@@ -5,9 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="refactor: CI/CD">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.12.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/FishingstopServerApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/assistant/controller/AssistantController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/assistant/service/AssistantService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/controller/AuthController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/dto/request/AuthLoginRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/dto/request/AuthRefreshRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/dto/request/AuthSignupRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/dto/response/AuthTokenResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/auth/service/AuthService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/call/dto/request/CallGatewayRequestDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/call/dto/response/CallGatewayResponseDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/call/gateway/CallGateway.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/chat/dto/request/ChatGatewayRequestDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/chat/dto/response/ChatGatewayResponseDto.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/chat/gateway/ChatGateway.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/controller/ScenarioController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/dto/reqeust/CreateScenarioRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/dto/response/CreateScenarioResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/entity/Scenario.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/repository/ScenarioRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/scenario/service/ScenarioService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/user/entity/UserEntity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/user/exception/UserErrorCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/user/repository/UserRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/domain/user/service/CustomUserDetailsService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/config/Gateway.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/config/SecurityConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/config/SwaggerConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/config/WebSocketConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/dto/BaseResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/exception/CustomErrorCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/exception/CustomException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/exception/CustomExceptionHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/jwt/JwtFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/jwt/JwtUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/jwt/exception/JwtErrorCode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/jwt/exception/JwtErrorType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/redis/RedisService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/global/utils/RandomStringUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/fishingstopserver/infra/openai/PromptGenerator.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dev/euns/fishingstopserver/FishingstopServerApplicationTests.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +95,12 @@
     &quot;assignee&quot;: &quot;Ingrsso&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Primunji/scenario-server.git",
-    "accountId": "d1ec5b81-00d7-4127-9af7-7e1ad32cae4a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Primunji/scenario-server.git&quot;,
+    &quot;accountId&quot;: &quot;d1ec5b81-00d7-4127-9af7-7e1ad32cae4a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -76,7 +119,7 @@
     "Spring Boot.FishingstopServerApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/leesangeun/Desktop/Sescenario/scenario-server/src/main/resources",
+    "last_opened_file_path": "/Users/leesangeun/Desktop/Sescenario/scenario-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,9 +161,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FishingstopServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="SenarioServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="scenario-server.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.euns.fishingstopserver.FishingstopServerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="dev.euns.fishingstopserver.SenarioServerApplication" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="true" />
         <option name="IS_SUBST" value="false" />
@@ -156,7 +199,9 @@
       <workItem from="1741129514258" duration="62000" />
       <workItem from="1741129590485" duration="4649000" />
       <workItem from="1741171083663" duration="28395000" />
-      <workItem from="1741378259292" duration="5056000" />
+      <workItem from="1741378259292" duration="5399000" />
+      <workItem from="1741383943305" duration="7000" />
+      <workItem from="1741383960622" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: build file">
       <option name="closed" value="true" />
