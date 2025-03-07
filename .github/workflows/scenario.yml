@@ -22,14 +22,19 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build -x test
 
+
+
       - name: Set environment values
         run: |
           rm -f .env 
           echo "${{ secrets.ENV }}" > .env
         shell: bash
 
+      - name: Show application config
+        run: .env
+
       - name: Restore .p12 file
-        run: echo "$P12_BASE64" | base64 -d > keystore.p12
+        run: echo "${{P12_BASE64}}" | base64 -d > keystore.p12
         env:
           P12_BASE64: ${{ secrets.P12_BASE64 }}
 
