@@ -8,6 +8,8 @@ COPY ${JAR_FILE} app.jar
 WORKDIR /app
 COPY .env .env
 
+COPY ./src/main/resources/keystore.p12 keystore.p12
+
 EXPOSE 443
 
 ENTRYPOINT ["java","-jar","/app.jar"]
