@@ -22,8 +22,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build -x test
 
-
-
       - name: Set environment values
         run: |
           rm -f .env 
@@ -46,7 +44,6 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/scenario:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/scenario:latest
-
 
       - name: EC2 Docker Run
         uses: appleboy/ssh-action@v0.1.8
