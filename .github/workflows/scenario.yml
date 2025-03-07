@@ -34,7 +34,7 @@ jobs:
         run: .env
 
       - name: Restore .p12 file
-        run: echo "${{P12_BASE64}}" | base64 -d > keystore.p12
+        run: echo "${{ secrets.P12_BASE64 }}" | base64 -d > keystore.p12
         env:
           P12_BASE64: ${{ secrets.P12_BASE64 }}
 
