@@ -51,9 +51,9 @@ jobs:
       - name: EC2 Docker Run
         uses: appleboy/ssh-action@v0.1.8
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             sudo docker stop scenario-container || true
             sudo docker rm scenario-container || true
