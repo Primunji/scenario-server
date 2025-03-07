@@ -28,11 +28,10 @@ jobs:
           echo "${{ secrets.ENV }}" > .env
         shell: bash
 
-      - name: Restore .p12 file
-        run: echo "$P12_BASE64" | base64 -d > keystore.p12
+      - name: Copy keystore.p12
         env:
-            P12_BASE64: ${{ secrets.P12_BASE64 }}
-
+          KEYSTORE_FILE: ${{ secrets.P12_BASE64 }}
+        run: echo $KEYSTORE_FILE | base64 --decode > keystore.p12
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
