@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="refactor: CI/CD">
       <change beforePath="$PROJECT_DIR$/.github/workflows/scenario.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/scenario.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +155,7 @@
       <workItem from="1741129514258" duration="62000" />
       <workItem from="1741129590485" duration="4649000" />
       <workItem from="1741171083663" duration="28395000" />
-      <workItem from="1741378259292" duration="3335000" />
+      <workItem from="1741378259292" duration="3436000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: build file">
       <option name="closed" value="true" />

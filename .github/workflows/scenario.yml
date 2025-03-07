@@ -31,7 +31,7 @@ jobs:
         shell: bash
 
       - name: Show application config
-        run: .env
+        run: cat .env
 
       - name: Restore .p12 file
         run: echo "${{ secrets.P12_BASE64 }}" | base64 -d > keystore.p12
