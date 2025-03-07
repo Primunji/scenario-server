@@ -5,8 +5,6 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication
 class FishingstopServerApplication
-
 fun main(args: Array<String>) {
-    println("Logger!")
     runApplication<FishingstopServerApplication>(*args)
 }
