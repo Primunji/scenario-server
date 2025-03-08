@@ -1,4 +1,4 @@
-package dev.euns.scenarioserver.global.jwt.exception
+package dev.euns.scenarioserver.global.exception.jwt
 
 
 import dev.euns.scenarioserver.global.exception.CustomErrorCode

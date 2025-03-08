@@ -1,4 +1,4 @@
-package dev.euns.scenarioserver.global.jwt.exception
+package dev.euns.scenarioserver.global.exception.jwt
 
 enum class JwtErrorType {
     OK,

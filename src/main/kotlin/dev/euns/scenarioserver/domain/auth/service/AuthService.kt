@@ -9,8 +9,8 @@ import dev.euns.scenarioserver.domain.user.exception.UserErrorCode
 import dev.euns.scenarioserver.domain.user.repository.UserRepository
 import dev.euns.scenarioserver.global.dto.BaseResponse
 import dev.euns.scenarioserver.global.exception.CustomException
-import dev.euns.scenarioserver.global.jwt.JwtUtil
-import dev.euns.scenarioserver.global.jwt.exception.JwtErrorCode
+import dev.euns.scenarioserver.global.utils.JwtUtil
+import dev.euns.scenarioserver.global.exception.jwt.JwtErrorCode
 import dev.euns.scenarioserver.global.redis.RedisService
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Service

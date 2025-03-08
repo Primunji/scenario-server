@@ -1,10 +1,11 @@
-package dev.euns.scenarioserver.global.jwt
+package dev.euns.scenarioserver.global.filter
 
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import dev.euns.scenarioserver.global.dto.BaseResponse
-import dev.euns.scenarioserver.global.jwt.exception.JwtErrorCode
-import dev.euns.scenarioserver.global.jwt.exception.JwtErrorType
+import dev.euns.scenarioserver.global.utils.JwtUtil
+import dev.euns.scenarioserver.global.exception.jwt.JwtErrorCode
+import dev.euns.scenarioserver.global.exception.jwt.JwtErrorType
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.filter.OncePerRequestFilter
 import jakarta.servlet.FilterChain
@@ -21,8 +22,8 @@ class JwtFilter (
         filterChain: FilterChain
     ) {
         val path: String = request.servletPath
-
-        if (path.startsWith("/auth") || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs")) {
+        println(path)
+        if (path.startsWith("/call")|| path.startsWith("/auth") || path.startsWith("/swagger-ui") || path.startsWith("/v3/api-docs")) {
             filterChain.doFilter(request, response)
             return
         }

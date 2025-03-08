@@ -1,8 +1,8 @@
-package dev.euns.scenarioserver.global.jwt
+package dev.euns.scenarioserver.global.utils
 
 import dev.euns.scenarioserver.domain.auth.dto.response.AuthTokenResponse
 import dev.euns.scenarioserver.domain.user.entity.UserEntity
-import dev.euns.scenarioserver.global.jwt.exception.JwtErrorType
+import dev.euns.scenarioserver.global.exception.jwt.JwtErrorType
 import dev.euns.scenarioserver.global.redis.RedisService
 import io.jsonwebtoken.ExpiredJwtException
 import org.springframework.beans.factory.annotation.Value

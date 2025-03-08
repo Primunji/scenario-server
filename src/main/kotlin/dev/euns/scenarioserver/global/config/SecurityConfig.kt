@@ -1,8 +1,8 @@
 package dev.euns.scenarioserver.global.config
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import dev.euns.scenarioserver.global.jwt.JwtFilter
-import dev.euns.scenarioserver.global.jwt.JwtUtil
+import dev.euns.scenarioserver.global.filter.JwtFilter
+import dev.euns.scenarioserver.global.utils.JwtUtil
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.http.HttpStatus
@@ -46,11 +46,11 @@ class SecurityConfig (
 
             .authorizeHttpRequests {
                 it
+                    .requestMatchers("/call/ws/**").permitAll() // WebSocket 경로를 인증 제외
                     .requestMatchers("/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**").permitAll()
                     .requestMatchers("/auth/**").anonymous()
                     .anyRequest().authenticated()
             }
-
             .addFilterBefore(JwtFilter(jwtUtil, objectMapper), UsernamePasswordAuthenticationFilter::class.java)
 
             .exceptionHandling {

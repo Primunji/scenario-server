@@ -35,6 +35,7 @@ class CallGateway(
                         val response = CallGatewayResponseDto("success", url.toString())
                         objectMapper.writeValueAsString(response)
                     }
+                    
                     .onErrorResume { ex ->
                         val errorMessage = when (ex) {
                             is com.fasterxml.jackson.core.JsonParseException ->
