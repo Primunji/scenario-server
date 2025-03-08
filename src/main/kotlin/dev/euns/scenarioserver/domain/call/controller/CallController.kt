@@ -20,7 +20,6 @@ class CallController(private val callService: CallService) {
         principal: Principal,
         @RequestBody request: CreateCallRequest
     ): BaseResponse<Any> {
-        logger.info("Call creation request received for scenario: ${request.scenario_id}")
         return callService.createCall(principal, request.scenario_id)
     }
 }

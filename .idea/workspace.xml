@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="refactor: CI/CD">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="Feat: 전화 생성이 성공적으로 작동하도록 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/call/controller/CallController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/call/controller/CallController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/call/service/CallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/call/service/CallService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741250777283</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Feat: 전화 생성이 성공적으로 작동하도록 변경">
+      <option name="closed" value="true" />
+      <created>1741449743005</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741449743005</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +305,7 @@
     <MESSAGE value="fix: ssl issues" />
     <MESSAGE value="refactor: gitignore" />
     <MESSAGE value="refactor: CI/CD" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: CI/CD" />
+    <MESSAGE value="Feat: 전화 생성이 성공적으로 작동하도록 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: 전화 생성이 성공적으로 작동하도록 변경" />
   </component>
 </project>
