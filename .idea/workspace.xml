@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c810c57c-7e25-4fd3-a300-2f4c1d4db8eb" name="Changes" comment="Feat: 전화 생성이 성공적으로 작동하도록 변경">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/room/entity/Room.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/euns/scenarioserver/domain/room/entity/Room.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +175,7 @@
       <workItem from="1741441534029" duration="3448000" />
       <workItem from="1741459173859" duration="505000" />
       <workItem from="1741461694384" duration="1236000" />
-      <workItem from="1741462946728" duration="4688000" />
+      <workItem from="1741462946728" duration="4976000" />
     </task>
     <task id="LOCAL-00001" summary="Feat: build file">
       <option name="closed" value="true" />
