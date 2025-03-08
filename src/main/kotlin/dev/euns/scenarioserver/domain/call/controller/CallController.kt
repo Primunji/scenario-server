@@ -13,8 +13,6 @@ import java.security.Principal
 @RestController
 @RequestMapping("/call")
 class CallController(private val callService: CallService) {
-    private val logger = LoggerFactory.getLogger(CallController::class.java)
-
     @PostMapping
     fun createCall(
         principal: Principal,

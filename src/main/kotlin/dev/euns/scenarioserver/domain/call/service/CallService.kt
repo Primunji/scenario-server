@@ -3,6 +3,8 @@ package dev.euns.scenarioserver.domain.call.service
 import com.aallam.openai.api.thread.ThreadId
 import dev.euns.scenarioserver.domain.call.entity.Call
 import dev.euns.scenarioserver.domain.call.repository.CallRepository
+import dev.euns.scenarioserver.domain.contacts.entity.Contacts
+import dev.euns.scenarioserver.domain.contacts.repository.ContactsRepository
 import dev.euns.scenarioserver.domain.scenario.repository.ScenarioRepository
 import dev.euns.scenarioserver.domain.user.repository.UserRepository
 import dev.euns.scenarioserver.global.dto.BaseResponse
@@ -20,6 +22,7 @@ class CallService(
     private val openAiUtils: OpenAiUtils,
     private val callRepository: CallRepository,
     private val scenarioRepository: ScenarioRepository,
+    private val contactsRepository: ContactsRepository,
     private val userRepository: UserRepository
 ) {
     @Transactional
@@ -45,6 +48,16 @@ class CallService(
         )
 
         callRepository.save(call)
+
+        val contacts = Contacts(
+            scenario_id = scenario_id,
+            userId = user.id,
+            name = scenario.name,
+            content = scenario.content,
+            profile_url = scenario.profile_url,
+        )
+
+        contactsRepository.save(contacts)
 
         return BaseResponse(status = 200, message = "성공적으로 전화를 생성 하였습니다.")
     }
