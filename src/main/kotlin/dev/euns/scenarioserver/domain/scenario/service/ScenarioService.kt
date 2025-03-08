@@ -70,7 +70,7 @@ class ScenarioService(
 
         )
         val entity = HttpEntity(requestBody, headers)
-        val response = restTemplate.exchange("http://localhost:8080/prompt", HttpMethod.POST, entity, String::class.java)
+        val response = restTemplate.exchange("https://scenario-ai.euns.dev/prompt", HttpMethod.POST, entity, String::class.java)
         val rootNode: JsonNode = mapper.readTree(response.body)
         return HttpPromptResponse(prompt =rootNode["prompt"]["user_info"].asText(), assistant_id = rootNode["assistant_id"].asText())
     }
