@@ -22,9 +22,9 @@ jwt:
   refresh-token-expire-time: 604800000
 
 server:
-  port: 8080
+  port: 443
   ssl:
-    enabled: false
+    enabled: true
     key-store: ${SSL_KEYSTORE_PATH}
     key-store-password: ${SSL_KEYSTORE_PASSWORD}
     key-store-type: PKCS12

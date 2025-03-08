@@ -46,7 +46,7 @@ class SecurityConfig (
 
             .authorizeHttpRequests {
                 it
-                    .requestMatchers("/call/ws/**").permitAll() // WebSocket 경로를 인증 제외
+                    .requestMatchers("/call/ws").permitAll() // WebSocket 경로를 인증 제외
                     .requestMatchers("/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**").permitAll()
                     .requestMatchers("/auth/**").anonymous()
                     .anyRequest().authenticated()
