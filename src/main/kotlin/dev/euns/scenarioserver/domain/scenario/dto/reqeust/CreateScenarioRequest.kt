@@ -4,4 +4,5 @@ data class CreateScenarioRequest(
     val name: String,
     val content: String,
     val prompt: String,
+    val imageUrl: String?
 )

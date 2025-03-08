@@ -15,4 +15,8 @@ class RedisService (
     fun getRefreshToken(id: Long): String? {
         return redisTemplate.opsForValue().get("refreshToken:$id")
     }
+
+    fun storeProfileImage(username: String, url: String) {
+        redisTemplate.opsForValue().set("profileImage:$username", url, 1, TimeUnit.DAYS)
+    }
 }

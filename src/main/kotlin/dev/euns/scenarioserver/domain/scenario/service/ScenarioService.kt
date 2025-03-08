@@ -6,15 +6,21 @@ import dev.euns.scenarioserver.domain.scenario.dto.reqeust.CreateScenarioRequest
 import dev.euns.scenarioserver.domain.scenario.entity.Scenario
 import dev.euns.scenarioserver.domain.scenario.repository.ScenarioRepository
 import dev.euns.scenarioserver.global.dto.BaseResponse
+import dev.euns.scenarioserver.global.redis.RedisService
+import dev.euns.scenarioserver.global.service.AwsS3Service
 import org.springframework.http.*
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.client.RestTemplate
+import org.springframework.web.multipart.MultipartFile
+import java.security.Principal
 
 @Service
 @Transactional(readOnly = true)
 class ScenarioService(
-    private val scenarioRepository: ScenarioRepository
+    private val scenarioRepository: ScenarioRepository,
+    private val s3Service: AwsS3Service,
+    private val redisService: RedisService
 ) {
     private val restTemplate = RestTemplate()
 
@@ -67,5 +73,13 @@ class ScenarioService(
         val response = restTemplate.exchange("http://localhost:8080/prompt", HttpMethod.POST, entity, String::class.java)
         val rootNode: JsonNode = mapper.readTree(response.body)
         return HttpPromptResponse(prompt =rootNode["prompt"]["user_info"].asText(), assistant_id = rootNode["assistant_id"].asText())
+    }
+
+    fun uploadProfile(principal: Principal, image: MultipartFile): BaseResponse<Unit> {
+        val imageUrl = s3Service.uploadFiles(image)
+
+        // redis 에 이미지 저장
+        redisService.storeProfileImage(principal.name, imageUrl)
+        return BaseResponse(message = imageUrl)
     }
 }

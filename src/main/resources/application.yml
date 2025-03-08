@@ -35,3 +35,16 @@ typecast:
 
 openai:
   api-key: ${OPEN_AI_KEY}
+
+cloud:
+  aws:
+    s3:
+      bucket: ${S3_BUCKET}
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+    credentials:
+      access-key: ${S3_CREDENTIALS_ACCESS_KEY}
+      secret-key: ${S3_CREDENTIALS_PRIVATE_KEY}
