@@ -17,7 +17,11 @@ data class Scenario(
 
     val profile_url: String,
 
+    val actor_id: String,
+
     val prompt: String,
+
+    val assistant_id: String,
 
     val created_at: LocalDateTime = LocalDateTime.now(),
 
