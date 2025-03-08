@@ -11,6 +11,8 @@ data class Room(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
+    val thread_id: Long,
+
     val scenario_id: Long,
 
     @Column(name = "user_id")
