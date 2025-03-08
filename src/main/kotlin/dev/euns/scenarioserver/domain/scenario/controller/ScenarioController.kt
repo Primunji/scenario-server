@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/senario")
+@RequestMapping("/scenario")
 class ScenarioController(
     private val scenarioService: ScenarioService,
 ) {
@@ -25,7 +25,7 @@ class ScenarioController(
         return scenarioService.createScenario(request)
     }
     @GetMapping
-    fun getScenario(): BaseResponse<List<Scenario>> {
+    fun getScenario(): BaseResponse<Any> {
         return scenarioService.getScenario()
     }
 }
