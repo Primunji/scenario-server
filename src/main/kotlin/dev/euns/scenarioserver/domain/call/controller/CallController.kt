@@ -16,7 +16,7 @@ class CallController(private val callService: CallService) {
     private val logger = LoggerFactory.getLogger(CallController::class.java)
 
     @PostMapping
-    suspend fun createCall(
+    fun createCall(
         principal: Principal,
         @RequestBody request: CreateCallRequest
     ): BaseResponse<Any> {
