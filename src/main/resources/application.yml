@@ -1,6 +1,10 @@
 spring:
   application:
     name: scenario-server
+  servlet:
+      multipart:
+        maxFileSize: 150MB
+        maxRequestSize: 150MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DB_URL}
