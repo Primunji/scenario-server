@@ -1,6 +1,7 @@
 package dev.euns.scenarioserver.domain.call.service
 
 import com.aallam.openai.api.thread.ThreadId
+import dev.euns.scenarioserver.domain.call.dto.response.CreateCallResponse
 import dev.euns.scenarioserver.domain.call.entity.Call
 import dev.euns.scenarioserver.domain.call.repository.CallRepository
 import dev.euns.scenarioserver.domain.contacts.entity.Contacts
@@ -26,7 +27,7 @@ class CallService(
     private val userRepository: UserRepository
 ) {
     @Transactional
-    fun createCall(principal: Principal, scenario_id: Long): BaseResponse<Any> {
+    fun createCall(principal: Principal, scenario_id: Long): BaseResponse<CreateCallResponse> {
         val thread_id = runBlocking{openAiUtils.createThread()}
 
         val scenario =
@@ -59,7 +60,10 @@ class CallService(
 
         contactsRepository.save(contacts)
 
-        return BaseResponse(status = 200, message = "성공적으로 전화를 생성 하였습니다.")
+        val response = CreateCallResponse(
+            thread_id=thread_id
+        )
+        return BaseResponse(status = 200, message = "성공적으로 전화를 생성 하였습니다.", data=response)
     }
 
 }

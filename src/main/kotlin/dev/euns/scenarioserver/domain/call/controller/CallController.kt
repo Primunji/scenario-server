@@ -1,6 +1,7 @@
 package dev.euns.scenarioserver.domain.call.controller
 
 import dev.euns.scenarioserver.domain.call.dto.request.CreateCallRequest
+import dev.euns.scenarioserver.domain.call.dto.response.CreateCallResponse
 import dev.euns.scenarioserver.domain.call.service.CallService
 import dev.euns.scenarioserver.global.dto.BaseResponse
 import org.slf4j.LoggerFactory
@@ -17,7 +18,7 @@ class CallController(private val callService: CallService) {
     fun createCall(
         principal: Principal,
         @RequestBody request: CreateCallRequest
-    ): BaseResponse<Any> {
+    ): BaseResponse<CreateCallResponse> {
         return callService.createCall(principal, request.scenario_id)
     }
 }

@@ -28,7 +28,7 @@ jwt:
 server:
   port: 443
   ssl:
-    enabled: true
+    enabled: false
     key-store: ${SSL_KEYSTORE_PATH}
     key-store-password: ${SSL_KEYSTORE_PASSWORD}
     key-store-type: PKCS12
