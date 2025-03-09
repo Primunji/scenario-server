@@ -6,6 +6,8 @@ import dev.euns.scenarioserver.domain.call.entity.Call
 import dev.euns.scenarioserver.domain.call.repository.CallRepository
 import dev.euns.scenarioserver.domain.contacts.entity.Contacts
 import dev.euns.scenarioserver.domain.contacts.repository.ContactsRepository
+import dev.euns.scenarioserver.domain.recent.entity.Recent
+import dev.euns.scenarioserver.domain.recent.repository.RecentRepository
 import dev.euns.scenarioserver.domain.scenario.repository.ScenarioRepository
 import dev.euns.scenarioserver.domain.user.repository.UserRepository
 import dev.euns.scenarioserver.global.dto.BaseResponse
@@ -24,6 +26,8 @@ class CallService(
     private val callRepository: CallRepository,
     private val scenarioRepository: ScenarioRepository,
     private val contactsRepository: ContactsRepository,
+    private val recentRepository: RecentRepository,
+
     private val userRepository: UserRepository
 ) {
     @Transactional
@@ -50,7 +54,7 @@ class CallService(
 
         callRepository.save(call)
 
-        val contacts = Contacts(
+        val recent = Recent(
             scenario_id = scenario_id,
             userId = user.id,
             name = scenario.name,
@@ -58,7 +62,7 @@ class CallService(
             profile_url = scenario.profile_url,
         )
 
-        contactsRepository.save(contacts)
+        recentRepository.save(recent)
 
         val response = CreateCallResponse(
             thread_id=thread_id
